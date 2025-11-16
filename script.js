@@ -4,29 +4,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const artists = [
         {
             id: 1,
-            name: "Mehemmed orucov",
-            bio: "Müasir rəssam, abstrakt və portret janrlarında işləyir. 15 illik təcrübəsi var. Əsərləri bir çox beynəlxalq sərgilərdə nümayiş etdirilib.",
+            name: "Məhəmməd Orucov",
+            bio: "1962-ci ildə Gürcüstan-da Borçalıda anadan olmuşdur. 1982-ci ildə Bakı-da Ə.Əzimzadə adına rəssamlıq məktəbini bitirmişdir. 1982-ci ildə Azərbaycan İncəsənət İnstitutun rəssamlıq fakultəsinə daxil olub və 1986-ci ildə həmin institutu bitirib. Orucov rəngkarlıq texnikada işləyir. Bir necə sərgilərdə iştirak etdi. Onlardan ən mənalı: 1995 İstanbul Kadiköy belediyesi sanat qalereyası 1996 Y.",
             specialty: "Abstrakt Rəsm",
             category: "bstract",
-            image: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: "./img/images.jpg",
             artworksCount: 24,
             followers: "1.2K",
             rating: 4.9,
             social: {
-                instagram: "@sema_art",
-                facebook: "SemaQarayevaArt"
+                instagram: "https://www.instagram.com/muhammed.orujov?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+                facebook: "."
             },
             artworks: [
                 {
                     id: 101,
-                    title: "Qırmızı Arzu",
+                    title: "Abşeron",
                     year: 2022,
-                    price: 1200,
-                    size: "120×128 cm",
+                    price: 5000,
+                    size: "120×100 cm",
                     medium: "Akril, kətan",
-                    description: "Bu əsər insanın daxili arzularını və ehtiraslarını təsvir edir. Qırmızı rəng enerji və həyat sevincini simvollaşdırır.",
-                    image: "https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                    tags: ["abstrakt", "qırmızı", "modern"]
+                    description: "Bu əsər neft mövzusunun sənət baxışından ifadəsidir.",
+                    image: "./img/imagess.jpg",
+                    tags: ["Neft Mövzusunda"]
                 },
                 {
                     id: 102,
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     price: 950,
                     medium: "Yağlı boya, kətan",
                     description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
-                    image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    image: "/.img/imagesss.jpg",
                     tags: ["mavi", "sakitlik", "dəniz"]
                 }
             ]
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     size: "150×180 cm",
                     medium: "Yağlı boya, kətan",
                     description: "Bu portret həyatın ağırlığını daşıyan, lakin hələ də ümidi olan bir balıqçını təsvir edir. Hər bir xətt onun həyat hekayəsini danışır.",
-                    image: "https://images.squarespace-cdn.com/content/v1/64e77c29df845c11ffd166d2/b7827adc-8fb5-4cd1-bafb-e0432aea8998/Stocksy_comp_4896564_V3.jpg?format=1000w",
+                    image: "./img/sekil.jpeg",
                     tags: ["portret", "realizm", "yaşlı"]
                 }
             ]
