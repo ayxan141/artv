@@ -28,32 +28,126 @@ document.addEventListener('DOMContentLoaded', function () {
                     image: "./img/imagess.jpg",
                     tags: ["Neft Mövzusunda"]
                 },
-                {
+               
+                 {
                     id: 102,
-                    title: "Mavi Sakitlik",
+                    title: "Neft Mövzusu",
                     year: 2021,
-                    size: "100×120 cm",
-                    price: 950,
+                    size: "120×100 cm",
+                    price: 5000,
                     medium: "Yağlı boya, kətan",
                     description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
-                    image: "/.img/imagesss.jpg",
-                    tags: ["mavi", "sakitlik", "dəniz"]
-                }
+                    image: "./img/imagesss.jpg",
+                    tags: ["Neft"]
+                },
+                
+                 {
+                    id: 103,
+                    title: "Qədimi",
+                    year: 2021,
+                    size: "110×80 cm",
+                    price: 4000,
+                    medium: "Yağlı boya, kətan",
+                    description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
+                    image: "./img/sekil.jpg",
+                    tags: ["Binalar"]
+                },
+
+                {
+                    id: 104,
+                    title: "Neft Mövzusu 2",
+                    year: 2021,
+                    size: "120×100 cm",
+                    price: 5000,
+                    medium: "Yağlı boya, kətan",
+                    description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
+                    image: "./img/sekil1.jpg",
+                    tags: ["Buruqlar"]
+                },
+                {
+                    id: 105,
+                    title: "Neft Mövzusu 3",
+                    year: 2021,
+                    size: "120×100 cm",
+                    price: 5000,
+                    medium: "Yağlı boya, kətan",
+                    description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
+                    image: "./img/sekil2.jpg",
+                    tags: ["Buruqlar"]
+                },
+                {
+                    id: 106,
+                    title: "Neft İşçiləri",
+                    year: 2021,
+                    size: "120×100 cm",
+                    price: 5000,
+                    medium: "Yağlı boya, kətan",
+                    description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
+                    image: "./img/sekil3.jpg",
+                    tags: ["Neft"]
+                },
+                {
+                    id: 107,
+                    title: "Neft İşçiləri 2",
+                    year: 2021,
+                    size: "140×90 cm",
+                    price: 11900,
+                    medium: "Yağlı boya, kətan",
+                    description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
+                    image: "./img/sekil4.jpg",
+                    tags: ["Buruqlar"]
+                },
+                {
+                    id: 108,
+                    title: "Neft Mövzusu 4",
+                    year: 2021,
+                    size: "140×90 cm",
+                    price: 11900,
+                    medium: "Yağlı boya, kətan",
+                    description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
+                    image: "./img/sekil5.jpg",
+                    tags: ["Neft"]
+                },
+                {
+                    id: 109,
+                    title: "Neft Mövzusu 5",
+                    year: 2021,
+                    size: "120×100 cm",
+                    price: 5000,
+                    medium: "Yağlı boya, kətan",
+                    description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
+                    image: "./img/sekil6.jpg",
+                    tags: ["Neft,Buruqlari"]
+                },
+                 {
+                    id: 110,
+                    title: "Çiçəklər",
+                    year: 2021,
+                    size: "85×75 cm",
+                    price: 2500,
+                    medium: "Yağlı boya, kətan",
+                    description: "Dərin mavi rənglərlə işlənmiş bu əsər dənizin sakitliyini və sonsuzluq hissini təqdim edir.",
+                    image: "./img/sekil7.jpg",
+                    tags: ["Təbiət"]
+                },
+                
             ]
+            
         },
+        
         {
             id: 2,
-            name: "Əli Məmmədov",
-            bio: "Klassik rəsm üzrə ixtisaslaşmış, neft boya ilə işləyən rəssam. Realizm üslubunda portretlər və mənzərələr yaradır.",
+            name: "Fikrət İbrahimli",
+            bio: "FİKRƏT İBRAHİMLİ 1955-ci ildə Neftçala rayonu Xıllı qəsəbəsində anadan olub. Neftçalada görkəmli rəssam Adil Hacıyevdən rəssamlıq sənətinin sirlərini öyrəndikdən sonra Əzim Əzimzadə adına Azərbaycan Dövlət Rəssamlıq məktəbini və Azərbaycan Dövlət Mədəniyyət və İncəsənət Universitetinin Rəngkarlıq ixtisasını bitirmişdir. Azərbaycanda öz dəsti-xətti olan rəssamlardandır.",
             specialty: "Realizm",
             category: "realism",
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: "./img/Fikət İbrahimli.webp",
             artworksCount: 18,
             followers: "980",
             rating: 4.8,
             social: {
-                instagram: "@eli_memmedov",
-                facebook: "EliMemmedovArt"
+                instagram: "",
+                facebook: ""
             },
             artworks: [
                 {
@@ -71,17 +165,185 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             id: 3,
-            name: "Leyla Əliyeva",
-            bio: "Müasir miniatür sənətinin gənc və istedadlı nümayəndəsi. Ənənəvi və müasir üslubları harmoniya şəklində birləşdirir.",
+            name: "İntiqam Ağayev",
+            bio: "Rəssam İntiqam Ağayev ehtiyatda olan zabit, II qrup Qarabağ əlilidir. Əzim Əzimzadə adına Rəssamlıq Məktəbini bitirib. Çəkdiyi əsərlər imperssionizm üslubundadır. Əsasən, yağlı boyadan istifadə edir. İşlədiyi mövzularda isə məişət, dəniz peyzajları və müharibə mövzuları üstünlük təşkil edir.İntiqam Ağayev incəsənət aləmində özünəməxsus dəsti-xətti olan istedadlı rəssamlardandır. Rəsmlərinə baxanda insanın ağlına da gəlməz ki, o, Qarabağ müharibəsinin iştirakçısı olub, ağır döyüşlərdə iştirak edib, yaddaşında dərin iz buraxmış faciəvi itkilər görüb. Çünki yaradıcılıqda əsas şüarı auditoriyaya yalnız müsbət enerji, xoş təəssürat və nikbin əhval-ruhiyyə ötürməkdir. O, öz kədərini, ağrı-acılarını da kətan üzərinə rəngli boyalarla, gözəl təbiət mənzərələri ilə canlandırmağı bacaran rəssamlardandır. Cəbhədə baş verənləri unutmasa da, tablolarda mavi Xəzəri, qayğısız uşaqlıq illərini, Abşeronun əsrarəngiz təbiətini təsvir etməklə insanlara nikbinlik aşılamağa çalışır. Müharibə illərində qanlı savaşlarda iştirak etmiş, böyük faciələrin şahidi olmuş və rəssamlığa da məhz döyüş zamanı aldığı fiziki və mənəvi zərbədən sonra başlamış İntiqam Ağayevin yaradıcılığının əsas mövzusu vətənpərvərlik olsa da, o, heç zaman ağrı-acını, bədbinliyi, çarəsizliyi rəsmlərində təbliğ etmir, əksinə, auditoriyaya mənəvi rahatlıq və ümid hissi aşılayır, xeyirin şər üzərində gec-tez qələbə çalacağına inamını insanlara çatdırır. Bir sözlə, rəssamın optimizmlə dolu yaradıcılığı hər kəsə həyatın gözəl olduğunu, onu sevinclə, doya-doya yaşamağı, nə baş verirsə-versin həyatdan küsməməyi öyrədir. İntiqam Ağayev böyük həvəslə hazırlaşdığı, bu yaxınlarda təşkil edəcəyi yeni sərgidə yer alan tablolarda da məhz bu xətt qorunub saxlanılır.",
             specialty: "Miniatür",
             category: "miniature",
-            image: "https://images.squarespace-cdn.com/content/v1/64e77c29df845c11ffd166d2/41b88135-a9b5-4d4f-a7a9-d20892deecae/Stocksy_comp_1155665_V3.jpg?format=1000w",
+            image: "./img/İntiqam Aqayev.jpg",
             artworksCount: 32,
             followers: "2.1K",
             rating: 4.7,
             social: {
-                instagram: "@leyla_miniature",
-                facebook: "LeylaMiniatureArt"
+                instagram: "",
+                facebook: ""
+            },
+            artworks: [
+                {
+                    id: 301,
+                    title: "Şəhər Həyatı",
+                    year: 2023,
+                    price: 750,
+                    size: "40×50 cm",
+                    medium: "Sulu boya, kağız",
+                    description: "Müasir şəhər həyatının dinamikasını miniatür üslubunda təsvir edən incə işlənmiş əsər.",
+                    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    tags: ["miniatur", "şəhər", "müasir"]
+                }
+            ]
+        },
+        {
+            id: 4,
+            name: "Aydın Rəcəbov",
+            bio: "Aydın Rəcəbov 9 aprel 1944-cü ildə Bakı şəhərində anadan olmuşdur. O, 1966-cı ildə Ə.Əzimzadə adına Azərbaycan Dövlət Rəssamlıq Məktəbini bitirmiş və həmin il Politexnik İnstitutunun memarlıq fakültəsinə daxil olmuşdur. İkinci kursdan M.A.Əliyev adına Azərbaycan Dövlət İncəsənət İnstitutunun xalça kafedrasında təhsilini davam etdirmiş və buradan 1972-ci ildə məzun olmuşdur.Rəssam 1975-ci ildə SSRİ Rəssamlar İttifaqının üzvü, 1991-ci ildə isə Azərbaycan Rəssamlar İttifaqının Rəyasət heyətinin üzvü seçilmişdir. O, 2012-ci ildə Azərbaycan Rəssamlar İttifaqının Dekorativ-tətbiqi sənət bölməsinin rəhbəri təyin olunmuşdur.",
+            specialty: "Miniatür",
+            category: "miniature",
+            image: "./img/Aydin Recebov.jpg",
+            artworksCount: 32,
+            followers: "2.1K",
+            rating: 4.7,
+            social: {
+                instagram: "",
+                facebook: ""
+            },
+            artworks: [
+                {
+                    id: 301,
+                    title: "Şəhər Həyatı",
+                    year: 2023,
+                    price: 750,
+                    size: "40×50 cm",
+                    medium: "Sulu boya, kağız",
+                    description: "Müasir şəhər həyatının dinamikasını miniatür üslubunda təsvir edən incə işlənmiş əsər.",
+                    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    tags: ["miniatur", "şəhər", "müasir"]
+                }
+            ]
+        },
+        {
+            id: 5,
+            name: "Hüseyn Haqverdiyev",
+            bio: "Hüseyn Həsən oğlu Haqverdiyev (3 mart 1956, Ucar) — Azərbaycan rəssamı, fotoqraf və heykəltaraş, Azərbaycan Respublikasının xalq rəssamı (2021). Həyatı:Rəssam Həsən Haqverdiyevin və Vera Kalininanın oğlu olaraq 1956-cı ildə Ucarda anadan olmuşdur. 1958-ci ildə ailəsi Bakıya köçmüşdür. 1971-ci ildə Əzim Əzimzadə adına İncəsənət kollecinə daxil olmuş, 1975-ci ildə oradan məzun olmuşdur. Həmin il Vera Muxina adına Leninqrad ali incəsənət akademiyasına daxil olmuş, heykəltaraşlıq fakültəsini 1980-ci ildə bitirmişdir. Azərbaycan Həvari Prefektinin baş kafedral kilsəsi olan Müqəddəs Bakirə Məryəm kilsəsindəki 'Bakirə Məryəm' heykəlinin müəllifidir. Səngəçal terminalının girişindəki 'Xəzər dənizi əfsanəsi' əsərinin müəllifidir.[2] İlk simpoziumu 1980-ci ildə nümayiş olunmuşdur. Hindistan, ABŞ, Almaniya, Gürcüstan, BƏƏ kimi ölkələrdə sərgi və simpoziumları baş tutmuşdur. 2014-cü ildə Özbəkistanda solo sərgisi baş tutmuşdur. Bakıda yaşayır.",
+            specialty: "Miniatür",
+            category: "miniature",
+            image: "./img/Hüseyn Haqverdiyev.webp",
+            artworksCount: 32,
+            followers: "2.1K",
+            rating: 4.7,
+            social: {
+                instagram: "",
+                facebook: ""
+            },
+            artworks: [
+                {
+                    id: 301,
+                    title: "Şəhər Həyatı",
+                    year: 2023,
+                    price: 750,
+                    size: "40×50 cm",
+                    medium: "Sulu boya, kağız",
+                    description: "Müasir şəhər həyatının dinamikasını miniatür üslubunda təsvir edən incə işlənmiş əsər.",
+                    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    tags: ["miniatur", "şəhər", "müasir"]
+                }
+            ]
+        },
+        {
+            id: 6,
+            name: "Xanlar Əhmədov",
+            bio: "Xanlar Əhməd oğlu Əhmədov (12 iyun 1946, Bakı) — rəssam-heykəltaraş, Azərbaycan Respublikasının xalq rəssamı (2006).Həyat və yaradıcılığı: Əhmədov Xanlar Əhməd oğlu 12 iyun 1946-ci ildə Bakıda anadan olmuşdur. O, Ə.Əzimzadə adına Rəssamlıq Texnikumu (1961–1966), Daşkənd Teatral-Bədii İnstitutunda (1966–1972) təhsil almışdır.Əsasən dəzgah və monumental heykəltaraşlıq sahəsində işləyən Xanlar Əhmədov bir sıra məşhur monumental layihələrin müəllifidir. Xanlar Əhmədov Xocalı faciəsini əks etdirən silsilə əsərlərini yaradıb. Bu cür heykəltaraşlıq və qrafika əsərləri sırasında 'Nalə', 'Ana körpəsi ilə', 'Yanmış qadın', 'Ata fəryadı', 'Fikir', 'Ana', 'Tomris ana', 'Soyunan', 'Leyli və Məcnun', 'Əzmkarlıq' əsərlərini misal çəkmək olar. Azadlıq prospekti metrostansiyasında böyük həcmli relyef əsərlərinin müəllifidir. Həmçinin, metronun foyesində Azərbaycan tarixi abidələrini əks etdirən əsərləri yaradıb.Xanlar Əhmədov 1975-ci ildə SSRİ Rəssamlar İttifaqının üzvü olmuşdur. O, 1982-ci ildə VDNX-nın bürünc medalı, 1995 və 1998-ci ildə Heykəltaraşlıq nominasiyasında Milli 'Humay' mükafatı almışdır. Xanlar Əhmədov 2002-ci ildə Azərbaycan Respublikasının əməkdar rəssamı, 2006-cı ildə Azərbaycan Respublikasının xalq rəssamı fəxri adına layiq görülmüşdür. Onun əsərləri Fransa, Almaniya, İran, Polşa, Rusiya, Ukrayna, Özbəkistan və digər ölkələrdə nümayiş etdirilib. Bir sıra əsərləri müxtəlif muzey və şəxsi kolleksiyalarda saxlanılır.",
+            specialty: "Miniatür",
+            category: "miniature",
+            image: "./img/Xanlar Ehmedov.jpg",
+            artworksCount: 32,
+            followers: "2.1K",
+            rating: 4.7,
+            social: {
+                instagram: "",
+                facebook: ""
+            },
+            artworks: [
+                {
+                    id: 301,
+                    title: "Şəhər Həyatı",
+                    year: 2023,
+                    price: 750,
+                    size: "40×50 cm",
+                    medium: "Sulu boya, kağız",
+                    description: "Müasir şəhər həyatının dinamikasını miniatür üslubunda təsvir edən incə işlənmiş əsər.",
+                    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    tags: ["miniatur", "şəhər", "müasir"]
+                }
+            ]
+        },
+        {
+            id: 7,
+            name: "Zakir Əhmədov",
+            bio: "Azərbaycan heykəltaraşı Zakir Əhmədov 1955-ci ildə Bakı şəhərində anadan olub.O, 1978-ci ildə Əzim Əzimzadə adına Dövlət Rəssamlıq Məktəbinin, 1988-ci ildə isə Mirzağa Əliyev adına Azərbaycan Dövlət İncəsənət İnstitutunun heykəltaraşlıq fakültələrini bitirib.1978-ci ildən dünyanın bir çox ölkələrində keçirilən sərgilərdə iştirak edir.1989-cu ildə Azərbaycan və SSRİ Rəssamlar İttifaqının üzvü seçilib.2005-ci ildə 'Humay' milli mükafatına layiq görülüb.Zakir Əhmədovun heykəlləri Azərbaycan, Türkiyə, Rusiya, Polşa, Çexiya, Cənubi Afrika, Fransa, Almaniya, Böyük Britaniya, ABŞ və cox ölkələrdəki şəxsi kolleksiyalarda saxlanılır.",
+            specialty: "Miniatür",
+            category: "miniature",
+            image: "./img/Zakir Ehmedov.jpeg",
+            artworksCount: 32,
+            followers: "2.1K",
+            rating: 4.7,
+            social: {
+                instagram: "",
+                facebook: ""
+            },
+            artworks: [
+                {
+                    id: 301,
+                    title: "Şəhər Həyatı",
+                    year: 2023,
+                    price: 750,
+                    size: "40×50 cm",
+                    medium: "Sulu boya, kağız",
+                    description: "Müasir şəhər həyatının dinamikasını miniatür üslubunda təsvir edən incə işlənmiş əsər.",
+                    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    tags: ["miniatur", "şəhər", "müasir"]
+                }
+            ]
+        },
+        {
+            id: 8,
+            name: "Zakir Mehdiyev",
+            bio: "Zakir Tahir oğlu Mehdiyev (4 oktyabr 1948, Kirovabad) — Azərbaycan heykəltaraş və rəssamı, pedaqoq, SSRİ Rəssamlar İttifaqının üzvü (1979), Azərbaycan Respublikasının əməkdar rəssamı (2021).Həyatı: Zakir Mehtiyev 1948-ci il 4 oktyabrda Gəncə şəhərində dünyaya gəlib. 1965-ci ildə orta məktəbi bitirdikdən sonra Əzim Əzimzadə adına Bakı Rəssamlıq Məktəbinə daxil olmuş və 1969-cu ildə bitirmişdir. Həmçinin Surikov adına Moskva Dövlət Rəssamlıq İnstitutunun məzunudur. SSRİ Rəssamlıq Akademiyasının aspiranturasını bitirmişdir. 1979-cu ildən SSRİ Rəssamlar İttifaqının üzvü olub.1978-ci ildə bu institutun heykəltaraşlıq fakültəsini bitirdikdən sonra Mehdiyev Bakıya dönüb. 1983–2000-ci illərdə Azərbaycan Dövlət Pedaqoji Universitetində heykəltaraşlıq tədris etmişdir. 2000–2016-cı illərdə Türkiyədə M.K. Atatürk Universitetində dosent və kafedra müdiri vəzifəsində fəaliyyət göstərmişdir",
+            specialty: "Miniatür",
+            category: "miniature",
+            image: "./img/Zakir Mehtiyev.jpg",
+            artworksCount: 32,
+            followers: "2.1K",
+            rating: 4.7,
+            social: {
+                instagram: "",
+                facebook: ""
+            },
+            artworks: [
+                {
+                    id: 301,
+                    title: "Şəhər Həyatı",
+                    year: 2023,
+                    price: 750,
+                    size: "40×50 cm",
+                    medium: "Sulu boya, kağız",
+                    description: "Müasir şəhər həyatının dinamikasını miniatür üslubunda təsvir edən incə işlənmiş əsər.",
+                    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    tags: ["miniatur", "şəhər", "müasir"]
+                }
+            ]
+        },
+        {
+            id: 9,
+            name: "Məhəmmədhüseyn Hüseynov",
+            bio: "O, Sankt-Peterburq şəhərində yaşadığı müddətdə özünün çoxşaxəli yaradıcılıq fəaliyyətinə başlamış, “Qatçina lövhələri”, “Sfinksin kölgəsi”, “Puşkin şəhərinin etüdləri” və başqa əsərlərini müxtəlif sərgilərdə nümayiş etdirmişdir. Rəssam 1995-ci ildə “Azərxalça” Elmi Yaradıcılıq İstehsalat Birliyində rəssam kimi, 1996-1998-ci illərdə Lətif Kərimov adına Azərbaycan Dövlət Xalça tətbiqi sənəti və Xalça Muzeyində bərpaçı-rəssam kimi işləmişdir. Xalçaçı rəssam eyni zamanda xalça sənətinə həsr olunmuş “Pazırık xalısı - rəmzlər dünyası”, “Xalça sənətində naxış yaddaşı” adlı kitablar və onlarla elmi məqalələrin müəllifidir.",
+            specialty: "Miniatür",
+            category: "miniature",
+            image: "./img/Mehemmedhuseyn Huseynov.jpg",
+            artworksCount: 32,
+            followers: "2.1K",
+            rating: 4.7,
+            social: {
+                instagram: "",
+                facebook: ""
             },
             artworks: [
                 {
@@ -97,6 +359,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             ]
         }
+
     ];
 
     // DOM elementləri - daha aydın qruplaşdırma
