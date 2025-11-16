@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtVision - Rəssamlar & Əsərlər</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-palette"></i>
+            <span>ArtVision</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Ana Səhifə</a>
+            <a href="#artists">Rəssamlar</a>
+            <a href="#gallery">Qalereya</a>
+            <a href="#about">Haqqımızda</a>
+            <a href="#contact">Əlaqə</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="icon-btn" id="searchToggle">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="icon-btn" id="favoritesBtn">
+                <a href="./favorit.html" style="color: #fff;">      <i class="fas fa-heart"></i></a>
+          
+                <span class="badge" id="favoritesCount">0</span>
+            </button>
+            <button class="icon-btn" id="cartBtn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge" id="cartCount">0</span>
+            </button>
+            <a href="./Auth.html"> <button class="btn btn-outline">Daxil Ol</button></a>
+<a href="./Auth.html">     <button class="btn btn-primary">Qeydiyyat</button></a>
+       
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Ana Səhifə</a>
+        <a href="#artists">Rəssamlar</a>
+        <a href="#gallery">Qalereya</a>
+        <a href="#about">Haqqımızda</a>
+        <a href="#contact">Əlaqə</a>
+        <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+            <button class="btn btn-outline" style="flex: 1;">Daxil Ol</button>
+            <button class="btn btn-primary" style="flex: 1;">Qeydiyyat</button>
+        </div>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="search-filter-container" id="searchFilter" style="display: none;">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Rəssam, əsər və ya janr axtar...">
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="filter-options">
+            <div class="filter-group">
+                <label for="categoryFilter">Kateqoriya</label>
+                <select id="categoryFilter" class="filter-select">
+                    <option value="all">Hamısı</option>
+                    <option value="abstract">Abstrakt</option>
+                    <option value="realism">Realizm</option>
+                    <option value="modern">Müasir</option>
+                    <option value="miniature">Miniatür</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="priceFilter">Qiymət Aralığı</label>
+                <div class="price-range">
+                    <input type="number" id="minPrice" placeholder="Min" min="0">
+                    <span>-</span>
+                    <input type="number" id="maxPrice" placeholder="Max" min="0">
+                </div>
+            </div>
+            <div class="filter-group">
+                <label for="sortBy">Sırala</label>
+                <select id="sortBy" class="filter-select">
+                    <option value="default">Əsas</option>
+                    <option value="price-low">Qiymət (Aşağıdan)</option>
+                    <option value="price-high">Qiymət (Yuxarıdan)</option>
+                    <option value="name">Ada görə</option>
+                    <option value="newest">Ən yenilər</option>
+                </select>
+            </div>
+        </div>
+        <div class="filter-actions">
+            <button class="btn btn-primary" id="applyFilters">Tətbiq et</button>
+            <button class="btn btn-outline" id="resetFilters">Sıfırla</button>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <div class="hero-content fade-in">
+            <h1>Rənglərin Dünyasına Səyahət</h1>
+            <p>Müasir və klassik rəssamların unikal əsərlərini kəşf edin. Hər kəs üçün incəsənət.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="exploreArtists">Rəssamları Kəşf Et</button>
+                <button class="btn btn-outline" style="color: white; border-color: white;">Əsərlərə Bax</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section class="section" id="artists">
+        <div class="section-header">
+            <h2>Rəssamlarımız</h2>
+            <p>Yerli və beynəlxalq səviyyəli istedadlı rəssamlarımızın əsərlərini kəşf edin</p>
+        </div>
+        <div class="artists-container" id="artistsContainer">
+            <!-- Rəssamlar burada JavaScript ilə yüklənəcək -->
+        </div>
+    </section>
+
+    <!-- Artworks Section -->
+    <section class="section artworks-section" id="artworksSection">
+        <button id="backButton" class="back-button">
+            <i class="fas fa-arrow-left"></i> Rəssamlara qayıt
+        </button>
+        <div class="artist-info" id="artistInfo">
+            <!-- Seçilmiş rəssamın məlumatları burada görünəcək -->
+        </div>
+        <div class="artworks-container" id="artworksContainer">
+            <!-- Rəssamın əsərləri burada görünəcək -->
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Səbətim</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Səbət məhsulları burada görünəcək -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Ümumi:</span>
+                <span id="cartTotal">0 AZN</span>
+            </div>
+            <button class="checkout-btn">Ödəniş et</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <div class="toast-message">Məhsul səbətə əlavə edildi</div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ArtVision</h3>
+                <p>Rəssamlar və incəsənət həvəskarları üçün bir platforma. Əsərlərinizi sərgiləyin və satın.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Səhifələr</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Ana Səhifə</a></li>
+                    <li><a href="#artists">Rəssamlar</a></li>
+                    <li><a href="#gallery">Qalereya</a></li>
+                    <li><a href="#about">Haqqımızda</a></li>
+                    <li><a href="#contact">Əlaqə</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Kömək</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Çatdırılma</a></li>
+                    <li><a href="#">Geri Qaytarma</a></li>
+                    <li><a href="#">Hesab Ayarları</a></li>
+                    <li><a href="#">Dəstək</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Əlaqə</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Bakı, Azərbaycan</li>
+                    <li><i class="fas fa-phone"></i> +994 12 345 67 89</li>
+                    <li><i class="fas fa-envelope"></i> info@artvision.az</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 ArtVision. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
