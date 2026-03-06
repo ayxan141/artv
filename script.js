@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Rəssamlar məlumatları - daha zəngin və real məlumatlar
+  
     const artists = [
         {
             id: 1,
@@ -362,16 +362,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ];
 
-    // DOM elementləri - daha aydın qruplaşdırma
+ 
     const elements = {
-        // Konteyner elementləri
+       
         artistsContainer: document.getElementById('artistsContainer'),
         artworksSection: document.getElementById('artworksSection'),
         artistInfo: document.getElementById('artistInfo'),
         artworksContainer: document.getElementById('artworksContainer'),
         cartItems: document.getElementById('cartItems'),
 
-        // Düymə elementləri
+        
         backButton: document.getElementById('backButton'),
         searchToggle: document.getElementById('searchToggle'),
         searchBtn: document.getElementById('searchBtn'),
@@ -383,19 +383,19 @@ document.addEventListener('DOMContentLoaded', function () {
         exploreArtists: document.getElementById('exploreArtists'),
         mobileMenuBtn: document.getElementById('mobileMenuBtn'),
 
-        // Input elementləri
+      
         searchInput: document.getElementById('searchInput'),
         categoryFilter: document.getElementById('categoryFilter'),
         minPrice: document.getElementById('minPrice'),
         maxPrice: document.getElementById('maxPrice'),
         sortBy: document.getElementById('sortBy'),
 
-        // Sayğac elementləri
+       
         favoritesCount: document.getElementById('favoritesCount'),
         cartCount: document.getElementById('cartCount'),
         cartTotal: document.getElementById('cartTotal'),
 
-        // UI elementləri
+      
         searchFilter: document.getElementById('searchFilter'),
         cartSidebar: document.getElementById('cartSidebar'),
         overlay: document.getElementById('overlay'),
@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu: document.getElementById('mobileMenu')
     };
 
-    // Dəyişənlər - daha təşkil edilmiş
+ 
     const state = {
         favorites: JSON.parse(localStorage.getItem('artvision_favorites')) || [],
         cart: JSON.parse(localStorage.getItem('artvision_cart')) || [],
@@ -412,9 +412,9 @@ document.addEventListener('DOMContentLoaded', function () {
         isFilterOpen: false
     };
 
-    // Əsas funksiyalar - daha moduler və oxunaqlı
+   
     class ArtGallery {
-        // Rəssamları yüklə
+        
         static loadArtists() {
             elements.artistsContainer.innerHTML = '';
 
@@ -431,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.updateFavoritesCount();
         }
 
-        // Boş state göstər
+
         static showEmptyState(message) {
             elements.artistsContainer.innerHTML = `
                     <div class="empty-state fade-in">
@@ -442,7 +442,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 `;
         }
 
-        // Rəssam kartı yarat
+ 
         static createArtistCard(artist) {
             const isFavorite = state.favorites.includes(artist.id);
             const artistCard = document.createElement('div');
@@ -494,7 +494,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return artistCard;
         }
 
-        // Rəssamın əsərlərini göstər
+        
         static showArtistArtworks(artist) {
             state.currentArtist = artist;
             document.querySelector('.section').style.display = 'none';
@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.scrollToTop();
         }
 
-        // Rəssam məlumatlarını yüklə
+      
         static loadArtistInfo(artist) {
             elements.artistInfo.innerHTML = `
                     <div class="artist-info-content">
@@ -542,7 +542,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 `;
         }
 
-        // Əsərləri yüklə
+        
         static loadArtworks(artworks) {
             elements.artworksContainer.innerHTML = '';
 
@@ -553,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.attachArtworkEventListeners();
         }
 
-        // Əsər kartı yarat
+       
         static createArtworkCard(artwork) {
             const isInCart = state.cart.some(item => item.id === artwork.id);
             const isFavorite = state.favorites.includes(artwork.id);
@@ -596,12 +596,12 @@ document.addEventListener('DOMContentLoaded', function () {
             return artworkCard;
         }
 
-        // Qiyməti formatla
+      
         static formatPrice(price) {
             return new Intl.NumberFormat('az-AZ').format(price);
         }
 
-        // Favorit əlavə et/çıxar
+        
         static toggleFavorite(itemId, element) {
             const index = state.favorites.indexOf(itemId);
             const isAdding = index === -1;
@@ -626,7 +626,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.updateFavoritesCount();
         }
 
-        // Səbətə əlavə et/çıxar
+        
         static addToCart(artwork, element) {
             const existingIndex = state.cart.findIndex(item => item.id === artwork.id);
             const isAdding = existingIndex === -1;
@@ -659,7 +659,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.updateCartDisplay();
         }
 
-        // Səbətdən çıxar
+        
         static removeFromCart(itemId) {
             state.cart = state.cart.filter(item => item.id !== itemId);
             this.saveToStorage('artvision_cart', state.cart);
@@ -668,7 +668,7 @@ document.addEventListener('DOMContentLoaded', function () {
             this.updateArtworkButtons();
         }
 
-        // Səbəti yenilə
+        
         static updateCartDisplay() {
             elements.cartItems.innerHTML = '';
             let total = 0;
@@ -707,7 +707,7 @@ document.addEventListener('DOMContentLoaded', function () {
             elements.cartTotal.textContent = `${this.formatPrice(total)} AZN`;
         }
 
-        // Əsər düymələrini yenilə
+        
         static updateArtworkButtons() {
             document.querySelectorAll('.buy-button').forEach(btn => {
                 const artworkId = parseInt(btn.getAttribute('data-id'));
@@ -723,7 +723,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
 
-        // Filtirlə
+
         static filterArtists() {
             const searchTerm = elements.searchInput.value.toLowerCase();
             const category = elements.categoryFilter.value;
@@ -731,7 +731,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const max = elements.maxPrice.value ? parseInt(elements.maxPrice.value) : Infinity;
             const sort = elements.sortBy.value;
 
-            // Filtrlə
+          
             state.filteredArtists = artists.filter(artist => {
                 const matchesSearch = artist.name.toLowerCase().includes(searchTerm) ||
                     artist.specialty.toLowerCase().includes(searchTerm) ||
@@ -745,12 +745,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 return matchesSearch && matchesCategory && matchesPrice;
             });
 
-            // Sırala
+           
             this.sortArtists(sort);
             this.loadArtists();
         }
 
-        // Sırala
+       
         static sortArtists(sortType) {
             switch (sortType) {
                 case 'price-low':
@@ -779,7 +779,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Toast mesajı göstər
+        
         static showToast(message, type = 'info') {
             const toast = elements.toast;
             toast.className = `toast ${type} active`;
@@ -790,12 +790,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 3000);
         }
 
-        // LocalStorage-a yaz
+       
         static saveToStorage(key, data) {
             localStorage.setItem(key, JSON.stringify(data));
         }
 
-        // Sayğacları yenilə
+        
         static updateFavoritesCount() {
             elements.favoritesCount.textContent = state.favorites.length;
         }
@@ -804,12 +804,12 @@ document.addEventListener('DOMContentLoaded', function () {
             elements.cartCount.textContent = state.cart.length;
         }
 
-        // Səhifənin yuxarısına sürüş
+        
         static scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Event listenerları əlavə et
+      
         static attachArtistEventListeners() {
             document.querySelectorAll('.action-btn.favorite').forEach(btn => {
                 btn.addEventListener('click', function (e) {
@@ -847,7 +847,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Event listenerlar - daha təşkil edilmiş
+    
     class EventHandlers {
         static init() {
             this.handleNavigation();
@@ -858,14 +858,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         static handleNavigation() {
-            // Geri düyməsi
+          
             elements.backButton.addEventListener('click', () => {
                 elements.artworksSection.style.display = 'none';
                 document.querySelector('.section').style.display = 'block';
                 ArtGallery.scrollToTop();
             });
 
-            // Navbar linkləri
+           
             document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
                 link.addEventListener('click', function (e) {
                     if (this.getAttribute('href').startsWith('#')) {
@@ -883,20 +883,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
 
-            // Rəssamları kəşf et
+            
             elements.exploreArtists.addEventListener('click', () => {
                 document.querySelector('.section').scrollIntoView({ behavior: 'smooth' });
             });
         }
 
         static handleSearch() {
-            // Axtarış panelini aç/bağla
+      
             elements.searchToggle.addEventListener('click', () => {
                 state.isFilterOpen = !state.isFilterOpen;
                 elements.searchFilter.style.display = state.isFilterOpen ? 'block' : 'none';
             });
 
-            // Axtarış
+           
             elements.searchBtn.addEventListener('click', () => ArtGallery.filterArtists());
             elements.searchInput.addEventListener('keyup', (e) => {
                 if (e.key === 'Enter') {
@@ -906,10 +906,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         static handleFilters() {
-            // Filtrləri tətbiq et
+            
             elements.applyFilters.addEventListener('click', () => ArtGallery.filterArtists());
 
-            // Filtrləri sıfırla
+            
             elements.resetFilters.addEventListener('click', () => {
                 elements.searchInput.value = '';
                 elements.categoryFilter.value = 'all';
@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         static handleCart() {
-            // Səbəti aç/bağla
+           
             elements.cartBtn.addEventListener('click', () => {
                 elements.cartSidebar.classList.add('active');
                 elements.overlay.classList.add('active');
@@ -938,12 +938,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         static handleMobile() {
-            // Mobil menyu
+           
             elements.mobileMenuBtn.addEventListener('click', () => {
                 elements.mobileMenu.classList.toggle('active');
             });
 
-            // Overlay klik
+           
             elements.overlay.addEventListener('click', () => {
                 elements.mobileMenu.classList.remove('active');
                 elements.cartSidebar.classList.remove('active');
@@ -952,14 +952,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // İlkin yüklənmə
+   
     function init() {
         ArtGallery.loadArtists();
         ArtGallery.updateCartCount();
         ArtGallery.updateCartDisplay();
         EventHandlers.init();
 
-        // Saytın yükləndiyini göstər
+      
         setTimeout(() => {
             ArtGallery.showToast('ArtVision-a xoş gəlmisiniz!', 'success');
         }, 1000);
