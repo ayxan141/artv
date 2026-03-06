@@ -303,7 +303,7 @@
             display: block;
         }
 
-        /* Responsive */
+     
         @media (max-width: 480px) {
             .container {
                 margin: 0.5rem;
@@ -330,7 +330,7 @@
             }
         }
 
-        /* Animation */
+  
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -342,7 +342,7 @@
     </style>
 </head>
 <body>
-    <!-- Login Page -->
+  
     <div id="loginPage" class="page">
         <div class="container fade-in">
             <div class="header">
@@ -408,7 +408,7 @@
         </div>
     </div>
 
-    <!-- Register Page -->
+   
     <div id="registerPage" class="page" style="display: none;">
         <div class="container fade-in">
             <div class="header">
@@ -478,25 +478,25 @@
     </div>
 
     <script>
-        // Auth sistemində istifadəçi məlumatları
+        
         let users = JSON.parse(localStorage.getItem('artvision_users')) || [];
         let currentUser = JSON.parse(localStorage.getItem('artvision_current_user')) || null;
 
-        // Səhifələri idarə etmək üçün funksiya
+      
         function showPage(pageId) {
-            // Bütün səhifələri gizlə
+          
             document.querySelectorAll('.page').forEach(page => {
                 page.style.display = 'none';
             });
             
-            // Tələb olunan səhifəni göstər
+           
             document.getElementById(pageId).style.display = 'block';
             
-            // Formları təmizlə
+       
             clearForms();
         }
 
-        // Formları təmizlə
+    
         function clearForms() {
             document.getElementById('loginForm').reset();
             document.getElementById('registerForm').reset();
@@ -505,7 +505,7 @@
             hideAlert('registerSuccess');
         }
 
-        // Şifrə göstərmə/gizlətmə
+      
         function togglePassword(inputId) {
             const input = document.getElementById(inputId);
             const toggle = input.parentNode.querySelector('.password-toggle i');
@@ -519,7 +519,7 @@
             }
         }
 
-        // Alert göstər
+
         function showAlert(elementId, message, type = 'error') {
             const alert = document.getElementById(elementId);
             alert.textContent = message;
@@ -527,41 +527,41 @@
             alert.style.display = 'block';
         }
 
-        // Alert gizlə
+     
         function hideAlert(elementId) {
             document.getElementById(elementId).style.display = 'none';
         }
 
-        // Loading göstər
+    
         function showLoading(buttonId) {
             document.getElementById(buttonId).classList.add('loading');
         }
 
-        // Loading gizlə
+       
         function hideLoading(buttonId) {
             document.getElementById(buttonId).classList.remove('loading');
         }
 
-        // Email validasiyası
+ 
         function isValidEmail(email) {
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
         }
 
-        // Şifrə validasiyası
+      
         function isValidPassword(password) {
             return password.length >= 6;
         }
 
-        // Login funksiyası
+        
         function login(email, password) {
             const user = users.find(u => u.email === email && u.password === password);
             return user;
         }
 
-        // Qeydiyyat funksiyası
+     
         function register(name, email, password) {
-            // Email-in artıq istifadə olunub-olunmadığını yoxla
+      
             if (users.find(u => u.email === email)) {
                 return { success: false, message: 'Bu email artıq istifadə olunub' };
             }
@@ -582,20 +582,20 @@
             return { success: true, user: newUser };
         }
 
-        // Social login (nümunə)
+    
         function socialLogin(provider) {
             showAlert('loginError', `${provider} ilə giriş hazırlanır...`, 'success');
-            // Real tətbiqdə burada social auth API çağırışları olardı
+            
         }
 
-        // Form hadisələri
+    
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             const email = document.getElementById('loginEmail').value.trim();
             const password = document.getElementById('loginPassword').value;
             
-            // Validasiya
+          
             if (!email || !password) {
                 showAlert('loginError', 'Zəhmət olmasa bütün xanaları doldurun');
                 return;
@@ -608,22 +608,22 @@
             
             showLoading('loginBtn');
             
-            // 1.5 saniyə gözlə (real tətbiqdə API çağırışı üçün)
+          
             setTimeout(() => {
                 const user = login(email, password);
                 
                 if (user) {
-                    // Uğurlu giriş
+                   
                     currentUser = user;
                     localStorage.setItem('artvision_current_user', JSON.stringify(user));
                     showAlert('loginError', 'Uğurla daxil oldunuz!', 'success');
                     
-                    // 2 saniyə sonra favoritlər səhifəsinə yönləndir
+                 
                     setTimeout(() => {
                         window.location.href = 'favorites.html';
                     }, 2000);
                 } else {
-                    // Uğursuz giriş
+                  
                     showAlert('loginError', 'Email və ya şifrə yanlışdır');
                 }
                 
@@ -639,7 +639,7 @@
             const password = document.getElementById('registerPassword').value;
             const confirmPassword = document.getElementById('registerConfirmPassword').value;
             
-            // Validasiya
+        
             if (!name || !email || !password || !confirmPassword) {
                 showAlert('registerError', 'Zəhmət olmasa bütün xanaları doldurun');
                 return;
@@ -662,23 +662,23 @@
             
             showLoading('registerBtn');
             
-            // 1.5 saniyə gözlə (real tətbiqdə API çağırışı üçün)
+        
             setTimeout(() => {
                 const result = register(name, email, password);
                 
                 if (result.success) {
-                    // Uğurlu qeydiyyat
+                    
                     currentUser = result.user;
                     localStorage.setItem('artvision_current_user', JSON.stringify(result.user));
                     showAlert('registerSuccess', 'Uğurla qeydiyyatdan keçdiniz!', 'success');
                     hideAlert('registerError');
                     
-                    // 2 saniyə sonra favoritlər səhifəsinə yönləndir
+                   
                     setTimeout(() => {
                         window.location.href = 'favorites.html';
                     }, 2000);
                 } else {
-                    // Uğursuz qeydiyyat
+                 
                     showAlert('registerError', result.message);
                 }
                 
@@ -686,12 +686,12 @@
             }, 1500);
         });
 
-        // Əgər istifadəçi artıq giriş edibsə, birbaşa favoritlər səhifəsinə yönləndir
+     
         if (currentUser && window.location.pathname.includes('login.html')) {
             window.location.href = 'favorites.html';
         }
 
-        // Səhifə yüklənəndə
+   
         document.addEventListener('DOMContentLoaded', function() {
             showPage('loginPage');
         });
